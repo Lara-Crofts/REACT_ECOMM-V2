@@ -43,6 +43,7 @@ main {
    align-items: center;
    justify-content: center;
    row-gap: 10vh;
+   grid-column-gap: 5px; 
    height: 100%;
    padding-top: 3%;
  /* top: 50%;
@@ -67,6 +68,12 @@ main {
 .product:hover {
    border: solid 1px rgb(126, 102, 97);
 }
+
+.product-list-container {
+   /* display: flex;
+   flex-direction: column; */
+   margin-bottom: 30px;
+ }
 
 .product img {
    -webkit-filter: grayscale(70%);
