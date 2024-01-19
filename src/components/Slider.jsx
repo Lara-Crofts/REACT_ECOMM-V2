@@ -80,16 +80,16 @@ const Slider = ({ children }) => {
     // Call initSlider on component mount
     initSlider();
 
-    // Add event listeners for window resize and load
+    //event listeners for window resize and load
     window.addEventListener("resize", initSlider);
     window.addEventListener("load", initSlider);
 
-    // Cleanup event listeners on component unmount
+    // cleanup event listeners on component unmount
     return () => {
       window.removeEventListener("resize", initSlider);
       window.removeEventListener("load", initSlider);
     };
-  }, []); // Empty dependency array to ensure the effect runs once on mount
+  }, []); // empty dependency array to ensure the effect runs once on mount
 
   return (
     <>

@@ -1,6 +1,7 @@
 import React from "react"
 import PathConstants from "./pathConstants"
-// import Layout from "../components/Layout"
+import ProductPage from "../pages/Product"; 
+
 
 const Home = React.lazy(() => import("../pages/Home"))
 // const Team = React.lazy(() => import("../pages/Team"))
@@ -9,10 +10,6 @@ const About = React.lazy(() => import("../pages/About"))
 // NEW STUFF
 // const Product = React.lazy(() => import("../pages/Product"))
 const Contact = React.lazy(() => import("../pages/Contact"))
-const Products = React.lazy(() => import("../pages/Products"))
-
-
-
 
 const routes = [ // Catch-all route for the root path ("/")
   // Catch-all route for the root path ("/")
@@ -23,7 +20,6 @@ const routes = [ // Catch-all route for the root path ("/")
     { path: PathConstants.ABOUT, element: <About /> },
     //NEW STUFF 
     { path: PathConstants.CONTACT, element: <Contact /> },
-    { path: PathConstants.PRODUCTS, element: <Products /> },
-
-]
+    { path: PathConstants.PRODUCT, element: <ProductPage /> }, // Change to ProductPage
+  ]
 export default routes;

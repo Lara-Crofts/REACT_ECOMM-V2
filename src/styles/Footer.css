@@ -103,7 +103,6 @@ footer {
     /* position: absolute; */
 
   }
-
   
   .footer_col0 input {
     border: none;
@@ -124,16 +123,13 @@ footer {
     color: #fff;
   }
   
-  
   /* SUBMIT BUTTON HOVER */
   .footer_col0 .inputSubmit:hover {
     background-color: rgb(192, 172, 154);
     color: #fff;
   }
   
-  
   /* liscense  */ 
-  
   
   .liscense p {
     font-size: 12px;
@@ -159,9 +155,139 @@ footer {
 /* Styling for the input elements in the newsletter section */
 .footer_col0 .inputName,
 .footer_col0 .inputEmail {
-  /* Add your styles here */
-  /* For example: */
   height: 20px;
   padding:7px;
   margin: 2px;
 }
+
+/* ------------------ MEDIA QUERY ----------------------*/
+
+/* PHONE USAGE */
+@media screen and (max-width: 400px) {
+  .footer_col0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .footer_col0 h4 {
+    margin-top: 20px; 
+  }
+
+  .footer_col0 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_col0 .inputSubmit {
+    width: 100%; 
+  }
+
+  .row {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .footer_col {
+    width: 100%;
+  }
+
+  .footer_col0 {
+    width: 100%;
+    text-align: center; /* Center the content in footer_col0 for small screens */
+  }
+
+  .socialIcons {
+    margin-top: 10px; /* Add some margin for better spacing on small screens */
+  }
+
+  .footer_col {
+    width: 100%;
+    margin-bottom: 20px; /* Add some bottom margin for better spacing on small screens */
+  }
+}
+
+/* TABLET USAGE */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+
+  .footer_col0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .footer_col0 h4 {
+    margin-top: 20px; 
+  }
+
+  .footer_col0 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_col0 input {
+    width: 60vw;
+  }
+
+  .footer_col0 .inputSubmit {
+    width: 100%;
+  }
+
+  .row {
+    padding: 30px 20px;
+  }
+
+  .socialIcons {
+    text-align: center; 
+  }
+
+  .footer_col {
+    width: 100%;
+  }
+
+}
+
+/* DESKTOP USAGE */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer_col0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .footer_col0 h4 {
+    margin-top: 20px;
+  }
+
+  .footer_col0 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_col0 input {
+    width: 60vw;
+  }
+
+  .footer_col0 .inputSubmit {
+    width: 100%; 
+  }
+
+  .row {
+    padding: 40px 30px;
+  }
+
+  .footer_col0 {
+    text-align: left; /* Adjust text alignment for larger screens if needed */
+  }
+
+  .footer_col {
+    width: 50%; 
+  }
+}
+
+/* -------------- END OF MEDIA QUERY --------------- */

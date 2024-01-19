@@ -1,10 +1,11 @@
 const PathConstants = {
     HOME: "/home",
     TEAM: "/team",
-    PORTFOLIO: "portfolio",
+    // PORTFOLIO: "/portfolio",
     ABOUT: "/about",
     CONTACT: "/contact",
-    PRODUCTS: "/Products",
+    // PRODUCTS: "/Products",
+    PRODUCT: "/Product",
 }
 
 export default PathConstants;

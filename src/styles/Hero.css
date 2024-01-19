@@ -120,3 +120,96 @@ main {
     font : normal 300 20px/1.8 'Open Sans', sans-serif;
 } */
 
+/* ------------------ MEDIA QUERY ----------------------*/
+
+/* PHONE USAGE */
+/* @media screen and (max-width: 400px) {
+
+} */
+
+/* TABLET USAGE  */
+
+/* @media screen and (min-width: 401px) and (max-width: 768px) {
+  } */
+
+  /* DESKTOP USAGE  */
+
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  header {
+      display: inline-block;
+  } */
+
+  /* -------------- END OF MEDIA QUERY --------------- */
+
+  /* ------------------ MEDIA QUERY ----------------------*/
+
+/* PHONE USAGE */
+@media screen and (max-width: 400px) {
+    .hero h1 {
+      font-size: 24px;
+      top: 60%;
+    }
+  
+    .hero h1 span {
+      font-size: 16px;
+    }
+  
+    .hero_button button {
+      width: 150px;
+      height: 50px;
+      top: 75%;
+      font-size: 12px;
+    }
+
+    .hero_button button {
+        max-width: 90%; 
+        display: block; 
+        margin: 0 auto; 
+      }
+  }
+  
+  /* TABLET USAGE */
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .hero h1 {
+     font-size: 5vw; 
+     max-width: 54%; 
+    }
+  
+    .hero h1 span {
+     font-size: 3vw; 
+     max-width: 100%;
+     word-wrap: break-word; 
+     overflow: hidden; 
+     display: block;
+      }
+  
+    .hero_button button {
+      left: 35vw;
+      width: 180px;
+      height: 60px;
+      top: 80%;
+      font-size: 14px;
+    }
+  }
+  
+  /* DESKTOP USAGE */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+      font-size: 48px;
+    }
+  
+    .hero h1 span {
+      font-size: 24px;
+    }
+
+    .hero_button button {
+        left: 35vw;
+        max-width: 70%;
+        display: block; 
+        margin: 0 auto; 
+      }
+  }
+  
+  /* -------------- END OF MEDIA QUERY --------------- */
+  

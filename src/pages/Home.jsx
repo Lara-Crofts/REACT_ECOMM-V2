@@ -25,9 +25,9 @@ import Herotwo from '../components/Herotwo';
 
 export default function Home() {
     return (
-   <>
+   <div>
    <Hero />
    <Herotwo />
- </>
+ </div>
     );
 };

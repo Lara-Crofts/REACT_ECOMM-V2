@@ -57,7 +57,7 @@
   }
   .slider-wrapper .image-list .image-item {
     width: 25vw;
-    height:50vh;
+    height:60vh;
     /* width: 325px; */
      /* height: 400px;  */
     object-fit: cover;
@@ -104,3 +104,73 @@
     bottom: -10px;
   }
   
+
+  /* ------------------ MEDIA QUERY ----------------------*/
+
+/* PHONE USAGE */
+@media screen and (max-width: 400px) {
+  .slider-wrapper .slide-button#prev-slide {
+    left: 5vw;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: 5vw;
+  }
+
+  .slider-wrapper .image-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    overflow-x: auto;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+/* TABLET USAGE  */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .slider-wrapper .slide-button#prev-slide {
+    left: 10vw;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: 10vw;
+  }
+
+  .slider-wrapper .image-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    overflow-x: auto;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 100%; 
+    height: 30vh;
+  }
+}
+
+/* DESKTOP USAGE  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .slider-wrapper .slide-button#prev-slide {
+    left: 15vw;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: 15vw;
+  }
+
+  .slider-wrapper .image-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-x: auto;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 100%; 
+    height: 30vh;
+  }
+}
+
+/* -------------- END OF MEDIA QUERY --------------- */
