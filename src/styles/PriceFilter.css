@@ -32,6 +32,79 @@
   
   select:focus {
     outline: none;
-    border-color: #221709; /* Adjust the color as needed */
-    box-shadow: 0 0 5px rgba(108, 69, 13, 0.5); /* Adjust the shadow as needed */
+    border-color: #221709; 
+    box-shadow: 0 0 5px rgba(108, 69, 13, 0.5); 
   }
+
+  /* ------------------ MEDIA QUERY ----------------------*/
+
+  @media screen and (max-width: 400px) {
+    .product-list-container {
+      width: 100%;
+    }
+
+    .filter-container {
+     display: block;
+     margin-top: 21vh;
+     width: 77vw;
+    }
+
+    label,
+    select {
+      font-size: 14px; 
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+
+    label {
+      font-size: 23px; 
+    }
+  }
+  
+  /* TABLET USAGE */
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .product-list-container {
+      width: 100%;
+    }
+
+    .filter-container {
+      display: block;
+      margin-top: 21vh;
+      width: 78vw;
+    }
+
+    label,
+    select {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+
+    label {
+      font-size: 23px; 
+    }
+  }
+  
+  /* DESKTOP USAGE */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .product-list-container {
+      width: 100%;
+    }
+
+    .filter-container {
+      width: 60vw;
+    }
+
+    label,
+    select {
+      display: inline-block;
+      width: auto; 
+      margin-bottom: 0; 
+    }
+
+    label {
+      font-size: 17px; 
+    }
+  }
+
+/* -------------- END OF MEDIA QUERY --------------- */
+

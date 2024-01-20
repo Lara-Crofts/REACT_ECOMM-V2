@@ -80,19 +80,6 @@ header .title a {
   }
   
   .header_menu {
-    /* position: absolute;
-    top: 0;
-    left:0;
-    width: 98%;
-    height: 80px;
-    background: #ffffff;
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 5px 10px #423c3c; */
-
     position: fixed;
     top: 0;
     left: 0;
