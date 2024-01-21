@@ -5,11 +5,8 @@ import { validateForm } from './FormValidator';
 
 function Form() {
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault(); // prevent the default form submission behavior
     if (validateForm()) {
-      // If validation passes, you can proceed with further actions
-      // For example, you might want to send the form data to a server
-      // or perform other actions here.
       console.log('Form submitted successfully!');
     }
   };
