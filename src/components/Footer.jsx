@@ -66,9 +66,7 @@ export default function Footer() {
                 <ul className="list_footer">
                     <li><a href="/">Our Impact</a></li>
                     <li><a href="/">Affiliates</a></li>
-                    <li><a href="/">Social Blog</a></li>
-                    {/* <li><a href="/"></a></li> */}
-    
+                    <li><a href="/">Social Blog</a></li>    
                 </ul>
              </div>
         </div>
@@ -80,7 +78,6 @@ export default function Footer() {
     
                 <div className="socialIcons">
     
-                    {/* come back to edit this using rreact icons  */}
                     <a href="/"><FaInstagram  /></a>
                     <a href="/"><FaFacebook /></a>
                     <a href="/"><FaXTwitter /></a>

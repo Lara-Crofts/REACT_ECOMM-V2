@@ -18,9 +18,6 @@
 
 // module.exports = connection;
 
-// video.. 
-
-
 
 //last revision..
 // require('dotenv').config();

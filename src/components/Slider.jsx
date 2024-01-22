@@ -41,7 +41,7 @@ const Slider = ({ children }) => {
 
       scrollbarThumb.addEventListener("mousedown", handleThumbDrag);
 
-      // Slide images according to the slide button clicks
+      // slide images according to the slide button clicks
       slideButtons.forEach((button) => {
         button.addEventListener("click", () => {
           const direction = button.id === "prev-slide" ? -1 : 1;
@@ -50,20 +50,20 @@ const Slider = ({ children }) => {
         });
       });
 
-      // Show or hide slide buttons based on scroll position
+      // show or hide slide buttons based on scroll position
       const handleSlideButtons = () => {
         slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
         slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft.current ? "none" : "flex";
       };
 
-      // Update scrollbar thumb position based on image scroll
+      // update scrollbar thumb position based on image scroll
       const updateScrollThumbPosition = () => {
         const scrollPosition = imageList.scrollLeft;
         const thumbPosition = (scrollPosition / maxScrollLeft.current) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
         scrollbarThumb.style.left = `${thumbPosition}px`;
       };
 
-      // Call these two functions when image list scrolls
+      // call these two functions when image list scrolls
       const handleScroll = () => {
         setScrollPosition(imageList.scrollLeft);
         updateScrollThumbPosition();
@@ -72,12 +72,12 @@ const Slider = ({ children }) => {
 
       imageList.addEventListener("scroll", handleScroll);
 
-      // Initial setup
+      // initial setup
       updateScrollThumbPosition();
       handleSlideButtons();
     };
 
-    // Call initSlider on component mount
+    // call initSlider on component mount
     initSlider();
 
     //event listeners for window resize and load
